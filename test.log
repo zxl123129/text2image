@@ -1,0 +1,37 @@
+Packet Uplink Ack/Nack Structure
+PAGE MODE                                                            : 00
+	UPLINK_TFI                                                    : 00011
+	CHANNEL_CODING_COMMAND                                        : 01
+		Ack/Nack Description
+		FINAL_ACK_INDICATION                                  : 0
+		STARTING_SEQUENCE_NUMBER                              : 0000011
+		STARTING_SEQUENCE_NUMBER			: 3(dec)
+		RECEIVED_BLOCK_BITMAP[]                               : 00000000
+		RECEIVED_BLOCK_BITMAP[]                               : 00000000
+		RECEIVED_BLOCK_BITMAP[]                               : 00000000
+		RECEIVED_BLOCK_BITMAP[]                               : 00000000
+		RECEIVED_BLOCK_BITMAP[]                               : 00000000
+		RECEIVED_BLOCK_BITMAP[]                               : 00000000
+		RECEIVED_BLOCK_BITMAP[]                               : 00000000
+		RECEIVED_BLOCK_BITMAP[]                               : 00000111
+	CONTENTION_RESOLUTION_TLLI presence indicator                 : 1
+		CONTENTION_RESOLUTION_TLLI[]                          : 2058543757(dec)
+		Packet Timing Advance presence indicator                      : 0
+	Power Control Parameters absent
+	Fixed Allocation Parameters presence indicator                : 0
+	Packet Extended Time Advance absent
+
+			 TBF Establish Flag                           : 0
+      - RR had GRRrlcDataInd MsgProcState Processed in RRConcurrentTbf now RRConcurrentTbf
+380130 SR read_CLASS_2_msg for record_no: <23>
+380132 SI got from MNTASK primitive SISRReadReq in SIIdle
+      - SI had SISRReadReq MsgProcState NotProcessed in SIIdle now SIIdle
+380133 SR had SISRReadCnf MsgProcState Processed
+      - SR got from DPTASK primitive UISR0705Req
+      - SR-Main: Prim UISR0705Req rec in CURR_STATE==CURR_WaitForTrigger
+      - SR had UISR0705Req MsgProcState NotProcesse
+380137 AT had ATATPollTimerInd MsgProcState Processed in AT_IDLE now AT_IDLE
+380140 AT had ATATPollTimerInd MsgProcState Processed in AT_IDLE now AT_IDLE
+380144 RR got from PHTASK primitive
+  - RR got PHMonCnf
+      - RR : PHMonCnf DTX = 0
